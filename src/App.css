@@ -1,0 +1,263 @@
+/* .App {
+	text-align: center;
+}
+
+.App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+}
+
+.App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+} */
+
+:root {
+	--foam: #e8f9fd;
+	--skyBlue: #79dae8;
+	--cerulean: #0aa1dd;
+	--mariner: #2155cd;
+	--black: #000;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: "Lato", sans-serif;
+}
+
+.App {
+	padding: 2rem 2rem;
+	flex-direction: column;
+	display: flex;
+	margin: 0 auto;
+	background-color: var(--mariner);
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* HEADING */
+
+.heading {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+.title {
+	font-size: 5vw;
+	word-wrap: nowrap;
+	color: var(--foam);
+	font-weight: 900;
+	letter-spacing: 5px;
+	text-shadow: 0.3vw 0.3vw var(--black);
+}
+
+.subtitle {
+	font-size: 3.9vw;
+	color: var(--black);
+	font-weight: 900;
+	letter-spacing: 3px;
+	text-shadow: 0.15vw 0.15vw var(--foam);
+}
+
+/* HEADING */
+
+/* INFINITE MARQUEE */
+
+.infinite-marquee {
+	background-color: var(--foam);
+	width: calc(100% + 4rem);
+	font-size: 3vw;
+	position: relative;
+	margin: 1rem 0;
+	height: 3.8vw;
+	overflow-x: hidden;
+	font-weight: 900;
+	letter-spacing: 0.3vw;
+}
+
+.track {
+	position: absolute;
+	white-space: nowrap;
+	will-change: transform;
+	animation: marquee 20s linear infinite;
+}
+
+.only-border-text {
+	-webkit-text-fill-color: var(--foam);
+	-webkit-text-stroke-width: 0.15vw;
+	-webkit-text-stroke-color: var(--black);
+}
+
+@keyframes marquee {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-50%);
+	}
+}
+
+/* INFINITE MARQUEE */
+
+/* CONNECT WALLET */
+
+.connect-wallet {
+	color: var(--foam);
+	font-weight: 900;
+	background-color: var(--cerulean);
+	border-radius: 0.8vw;
+	padding: 0.9vw 2vw;
+	font-size: 3vw;
+}
+
+#connect-wallet {
+	margin: 2vw;
+	box-shadow: 0.3vw 0.3vw var(--black);
+}
+
+.connect-wallet:hover {
+	cursor: pointer;
+	color: var(--black);
+	background-color: var(--foam);
+}
+
+#connect-wallet:hover {
+	box-shadow: 0.3vw 0.3vw var(--cerulean);
+}
+
+/* CONNECT WALLET */
+
+/* POLICY */
+
+.policy {
+	width: calc(100% - 5vw);
+	color: var(--foam);
+	font-weight: 700;
+	background-color: var(--cerulean);
+	border-radius: 1.2vw;
+	padding: 0.8vw 3vw 0.8vw 3vw;
+	font-size: 2.5vw;
+	height: 100%;
+	text-align: center;
+}
+
+.policy-title {
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 3vw;
+}
+
+#policy {
+	margin-bottom: 2vw;
+	box-shadow: 0.3vw 0.3vw var(--black);
+}
+
+.policy:hover {
+	cursor: pointer;
+	color: var(--black);
+	background-color: var(--foam);
+}
+
+#policy:hover {
+	box-shadow: 0.3vw 0.3vw var(--cerulean);
+}
+
+.policy hr {
+	width: 100%;
+	background: magenta;
+	border: 0.2vw solid magenta;
+	height: 0.2vw;
+	border-radius: 0.4vw;
+}
+
+/* POLICY */
+
+/* INFO */
+
+.info {
+	width: calc(100% - 5vw);
+	color: var(--foam);
+	font-weight: 700;
+	background-color: var(--cerulean);
+	border-radius: 1.2vw;
+	padding: 0.8vw 3vw 0.8vw 3vw;
+	font-size: 2.5vw;
+	height: 100%;
+	text-align: center;
+}
+
+.info-title {
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 3vw;
+	text-shadow: 0.2vw 0.2vw var(--black);
+}
+
+.info:hover .info-title {
+	text-shadow: 0.2vw 0.2vw var(--skyBlue);
+}
+
+#info {
+	margin-bottom: 2vw;
+	box-shadow: 0.3vw 0.3vw var(--black);
+}
+
+.info:hover {
+	cursor: pointer;
+	color: var(--black);
+	background-color: var(--foam);
+}
+
+#info:hover {
+	box-shadow: 0.3vw 0.3vw var(--cerulean);
+}
+
+.info hr {
+	width: 100%;
+	background: magenta;
+	border: 0.2vw solid magenta;
+	height: 0.2vw;
+	border-radius: 0.4vw;
+}
+
+/* POLICY */
+
+/* button {
+	font-family: "Lato", sans-serif;
+	all: initial;
+} */
+
+.switch-title {
+	color: var(--foam);
+	font-weight: 900;
+	font-size: 3vw;
+	text-shadow: 0.2vw 0.2vw var(--black);
+}
