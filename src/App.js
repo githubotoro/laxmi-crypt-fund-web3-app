@@ -1,5 +1,7 @@
-import logo from "./logo.svg";
 import "./App.css";
+import { useEffect, useState } from "react";
+
+// Moralis
 import {
 	useMoralis,
 	useChain,
@@ -7,20 +9,17 @@ import {
 	useApiContract,
 	useMoralisWeb3ApiCall,
 	runContractFunction,
+	useMoralisWeb3Api,
 } from "react-moralis";
 
-import { ConnectButton, Loading } from "web3uikit";
-import { useEffect, useState } from "react";
+// Smart Contract ABI
 import abi from "./Utils/LaxmiCryptFund.json";
 
-import { useMoralisWeb3Api } from "react-moralis";
-
+// Ethers for calling smart contract functions
 import { ethers } from "ethers";
 
 // Importing sweelalert2
 import Swal from "sweetalert2";
-import useSound from "use-sound";
-import $ from "jquery";
 
 // Loader Component
 import BeatLoader from "react-spinners/BeatLoader";
@@ -90,6 +89,7 @@ function App() {
 		}
 	);
 
+	// Function to fetch contract data
 	const fetchContractData = async () => {
 		try {
 			const data = await fetch();
@@ -159,6 +159,7 @@ function App() {
 		fetchData();
 	}, []);
 
+	// Moralis initialization
 	const {
 		isInitialized,
 		enableWeb3,
@@ -174,6 +175,7 @@ function App() {
 		refetchUserData,
 	} = useMoralis();
 
+	// Switch network functionality from Moralis
 	const { switchNetwork, chain, chainId } = useChain();
 
 	// Preventing page refresh on submit
@@ -310,6 +312,7 @@ function App() {
 		}
 	};
 
+	// Checking for already existing connection
 	useEffect(() => {
 		const connectorId = window.localStorage.getItem("connectorId");
 
@@ -332,13 +335,10 @@ function App() {
 	const RecentInvestmentsSound = new Audio(recentInvestmentsSound);
 	const InvestInputSound = new Audio(investInputSound);
 	const QuickLinksSound = new Audio(quickLinksSound);
-
 	const InquiriesSound = new Audio(inquiriesSound);
 
 	return (
 		<>
-			{/* TESTING */}
-
 			{canEnter === false ? (
 				<>
 					<div className="loading-screen">
@@ -497,10 +497,6 @@ function App() {
 								) : (
 									<>
 										<div className="switch-container">
-											{/* <div className="switch-title">
-										Please Switch to Polygon Mumbai Testnet
-									</div> */}
-
 											<div
 												onClick={() =>
 													switchNetwork("0x13881")
