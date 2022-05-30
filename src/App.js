@@ -911,7 +911,7 @@ function App() {
 							&nbsp;{" "}
 							<a
 								className="quick-links-link"
-								href="https://www.producthunt.com/@yupuday/made"
+								href="https://www.producthunt.com/posts/laxmi-crypt-fund"
 								rel="noreferrer"
 								target="_blank"
 							>
