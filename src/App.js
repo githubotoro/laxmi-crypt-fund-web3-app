@@ -56,7 +56,7 @@ function App() {
 	const CONTRACT_ABI = abi.abi;
 
 	// Setting Page Loading State
-	const [loading, setLoading] = useState(true);
+	const [loading, setLoading] = useState(false);
 
 	// Enter the site
 	const [canEnter, setCanEnter] = useState(false);
