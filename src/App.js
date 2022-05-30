@@ -122,10 +122,6 @@ function App() {
 					},
 				]);
 			}
-
-			console.log(`First timestamp is ${memos[0].timestamp}`);
-			console.log(`Second timestamp is ${memos[1].timestamp}`);
-			console.log(`Third timestamp is ${memos[2].timestamp}`);
 		} catch (error) {
 			console.log(error);
 		}

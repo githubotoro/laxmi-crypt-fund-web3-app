@@ -12,7 +12,10 @@ const APP_ID = process.env.REACT_APP_APP_ID;
 
 root.render(
 	<React.StrictMode>
-		<MoralisProvider serverUrl={SERVER_URL} appId={APP_ID}>
+		<MoralisProvider
+			serverUrl="https://bodefwyzsgqx.usemoralis.com:2053/server"
+			appId="G3TN8ud5Hx2P5CcIedKGgH1LbqtYIryCaxjLXwZ1"
+		>
 			<App />
 		</MoralisProvider>
 	</React.StrictMode>
