@@ -140,7 +140,7 @@ function App() {
 
 		let getAllPromise = lcfContract.getAll();
 
-		getAllPromise.then(function (result) {
+		await getAllPromise.then(function (result) {
 			setInvestors(result[0].toString());
 			setMinInvestment(result[1].toString());
 			setMaxInvestment(result[2].toString());
