@@ -6,12 +6,13 @@ import reportWebVitals from "./reportWebVitals";
 import { MoralisProvider } from "react-moralis";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
+const SERVER_URL = process.env.REACT_APP_SERVER_URL;
+const APP_ID = process.env.REACT_APP_APP_ID;
+
 root.render(
 	<React.StrictMode>
-		<MoralisProvider
-			serverUrl={process.env.REACT_APP_SERVER_URL}
-			appId={process.env.REACT_APP_APP_ID}
-		>
+		<MoralisProvider serverUrl={SERVER_URL} appId={APP_ID}>
 			<App />
 		</MoralisProvider>
 	</React.StrictMode>
