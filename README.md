@@ -121,7 +121,7 @@ This project is inspired from Neeraj Vora's directoral "Phir Hera Pheri" (2006).
 
 ## Getting Started 🚀
 
-All you need to get started with this project is **MATIC!** 😄
+All you need to get started with this project is to have seen **Phir Hera Pheri!** movie 😄
 
 <a name="installation"></a>
 
@@ -167,7 +167,7 @@ All you need to get started with this project is **MATIC!** 😄
 
 ## Contributing 🤝
 
-"Laxmi Crypt Fund" is a community project and any contributions you make are greatly appreciated. If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "chai". 🏷
+"Laxmi Crypt Fund" is a community project and any contributions you make are greatly appreciated. If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "Laxmi". 🏷
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/LaxmiFeature`)
