@@ -335,7 +335,6 @@ body {
 }
 
 .policy:hover {
-	cursor: pointer;
 	color: var(--black);
 	background-color: var(--foam);
 }
@@ -430,7 +429,6 @@ body {
 }
 
 .info:hover {
-	cursor: pointer;
 	color: var(--black);
 	background-color: var(--foam);
 }

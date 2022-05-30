@@ -615,7 +615,7 @@ function App() {
 								className="input-class"
 								id="input-id"
 								type="text"
-								placeholder=">= 0.0001 AND <= 0.01"
+								placeholder=">= 0.001 AND <= 0.1"
 								onChange={handleInvestmentChange}
 								onMouseEnter={() => {
 									InvestInputSound.play();
