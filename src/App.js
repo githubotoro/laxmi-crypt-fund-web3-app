@@ -154,6 +154,8 @@ function App() {
 					]);
 				}
 
+				console.log(`${memos[0]}`);
+
 				setLoading(false);
 			} catch (error) {
 				console.log(error);
