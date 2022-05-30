@@ -8,7 +8,7 @@
   </a>
   
   <p align="center">
-    <a href="https://www.producthunt.com/@yupuday"><strong>Product Hunt »</strong></a>
+    <a href="https://www.producthunt.com/posts/laxmi-crypt-fund"><strong>Product Hunt »</strong></a>
     <br />
     <a href="https://laxmi-crypt-fund.vercel.app/">View Project</a>
     |
@@ -206,7 +206,7 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 
 ## Project Links 🔗
 
-> **Product Hunt Link** : [https://www.producthunt.com/@yupuday](https://www.producthunt.com/@yupuday)
+> **Product Hunt Link** : [https://www.producthunt.com/posts/laxmi-crypt-fund](https://www.producthunt.com/posts/laxmi-crypt-fund)
 
 > **GitHub Web3 App Project Link** : [https://github.com/githubotoro/laxmi-crypt-fund-web3-app](https://github.com/githubotoro/laxmi-crypt-fund-web3-app)
 
