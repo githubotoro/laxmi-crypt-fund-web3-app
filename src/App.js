@@ -100,7 +100,11 @@ function App() {
 	// Function to fetch contract data
 	const fetchContractData = async () => {
 		try {
-			const data = await fetch();
+			try {
+				const data = await fetch();
+			} catch (error) {
+				console.log(error);
+			}
 
 			setInvestors(data[0]);
 			setMinInvestment(data[1]);
