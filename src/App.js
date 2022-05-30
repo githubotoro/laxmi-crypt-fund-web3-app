@@ -40,6 +40,12 @@ import investInputSound from "./Sounds/investInputSound.mp3";
 import inquiriesSound from "./Sounds/inquiriesSound.mp3";
 import quickLinksSound from "./Sounds/quickLinksSound.mp3";
 
+// Importing Logos
+import laxmiCryptFundLogo from "./Logos/laxmi-crypt-fund-logo-foam.svg";
+import twitterLogo from "./Logos/twitter-logo-foam.svg";
+import polygonLogo from "./Logos/polygon-logo-foam.svg";
+import githubLogo from "./Logos/github-logo-foam.svg";
+
 function App() {
 	// Contract Address
 	const CONTRACT_ADDRESS = "0x085d174c046DfdeAE987D27fF5446D31A570D6AA";
@@ -369,6 +375,56 @@ function App() {
 			) : (
 				<>
 					<div className="App">
+						<div className="nav-bar">
+							<div className="left-logos">
+								<a
+									href="https://mumbai.polygonscan.com/address/0x085d174c046DfdeAE987D27fF5446D31A570D6AA"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<img
+										className="logo"
+										src={laxmiCryptFundLogo}
+									></img>
+								</a>
+							</div>
+
+							<div className="right-logos">
+								<a
+									href="https://mumbai.polygonscan.com/address/0x085d174c046DfdeAE987D27fF5446D31A570D6AA#code"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<img
+										className="logo"
+										src={polygonLogo}
+									></img>
+								</a>
+
+								<a
+									href="https://github.com/githubotoro/laxmi-crypt-fund-web3-app"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<img
+										className="logo"
+										src={githubLogo}
+									></img>
+								</a>
+
+								<a
+									href="https://twitter.com/yupuday"
+									target="_blank"
+									rel="noreferrer"
+								>
+									<img
+										className="logo"
+										src={twitterLogo}
+									></img>
+								</a>
+							</div>
+						</div>
+
 						<div
 							className="heading"
 							onMouseEnter={() => {
@@ -631,6 +687,7 @@ function App() {
 						</div>
 
 						<a
+							className="faucet-width"
 							href="https://mumbaifaucet.com/"
 							target="_blank"
 							rel="noreferrer"
@@ -734,9 +791,7 @@ function App() {
 								SchemeSound.currentTime = 0;
 							}}
 						>
-							<span className="scheme-title">
-								Save ETHER, Spend MATIC
-							</span>
+							<span className="scheme-title">Scheme</span>
 							<hr />
 							Yeh apna Raju, Shyam, Babu Bhaiya, sab ameer kaise
 							bana?
@@ -848,7 +903,7 @@ function App() {
 							&nbsp;{" "}
 							<a
 								className="quick-links-link"
-								href="https://mumbai.polygonscan.com/address/0x21cf10bbe3e515f04a78864d021fe53844970431"
+								href="https://mumbai.polygonscan.com/address/0x085d174c046DfdeAE987D27fF5446D31A570D6AA"
 								rel="noreferrer"
 								target="_blank"
 							>
@@ -879,8 +934,8 @@ function App() {
 							<hr />
 							<div className="quick-links-quote">
 								<i>
-									“Ek zamana tha jab hum bhi gareeb hua karte
-									the...
+									“Ek zamana tha, jab hum bhi gareeb hua karte
+									the..."
 								</i>
 							</div>
 						</div>
