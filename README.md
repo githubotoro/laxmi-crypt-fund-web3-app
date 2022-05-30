@@ -1,70 +1,245 @@
-# Getting Started with Create React App
+<!-- PROJECT HEADER -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br />
+<div align="center">
+  <a href="https://laxmi-crypt-fund.vercel.app/">
+    <img src="Images/laxmi-crypt-fund-logo.svg" alt="logo" width="20%">
+    <h1><b>Laxmi Crypt Fund</b><br/><b>21 sec Mein Crypto Double</b></h1>
+  </a>
+  
+  <p align="center">
+    <a href="https://www.producthunt.com/@yupuday"><strong>Product Hunt »</strong></a>
+    <br />
+    <a href="https://laxmi-crypt-fund.vercel.app/">View Project</a>
+    |
+    <a href="https://github.com/githubotoro/laxmi-crypt-fund-web3-app/issues">Report Bug</a>
+    |
+    <a href="https://github.com/githubotoro/laxmi-crypt-fund-web3-app/issues">Request Feature</a>
+    <br/>
+    <a href="https://twitter.com/yupuday">Twitter</a>
+    |
+    <a href="https://mumbai.polygonscan.com/address/0x085d174c046DfdeAE987D27fF5446D31A570D6AA#code">PolygonScan</a>
+    |
+    <a href="https://github.com/githubotoro/laxmi-crypt-fund-smart-contract">Smart Contract</a>
+    <br/> <br/>
+    <b>If you like this project, don't forget to give it a star! <br/> Thanks! 😊</b>
+  </p>
+  
+</div>
 
-## Available Scripts
+<!-- PROJECT HEADER -->
 
-In the project directory, you can run:
+<!-- TABLE OF CONTENTS -->
 
-### `npm start`
+## Table of Contents 📌
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+      <ul>
+        <li><a href="#colour-palette">Colour Palette</a></li>
+      </ul>
+      <ul>
+        <li><a href="#font-used">Font Used</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#project-links">Project Links</a></li>
+    <li><a href="#acknowledgements">Acknowledgments</a></li>
+  </ol>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- TABLE OF CONTENTS -->
 
-### `npm test`
+<!-- ABOUT THE PROJECT -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<a name="about-the-project"></a>
 
-### `npm run build`
+## About The Project 📝
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<div align="center">
+<a href="https://laxmi-crypt-fund.vercel.app/">
+    <img src="Images/laxmi-crypt-fund-title.png" alt="logo" width="90%">
+</a>
+</div>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This project is inspired from Neeraj Vora's directoral "Phir Hera Pheri" (2006). It's a Web3 parody of "Laxmi Chit Fund" on Polygon Mumbai Testnet. Whenever an investment is made, there is 50% chance of getting it doubled, and 50% chance of losing it all. "Save on Mainnet, Spend on Testnet!", that's our motto. 😄
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- ABOUT THE PROJECT -->
 
-### `npm run eject`
+<!-- BUILT WITH -->
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<a name="built-with"></a>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Built With 🔍
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+-   [React.js](https://reactjs.org/)
+-   [Moralis](https://moralis.io/)
+-   [Ethers.js](https://docs.ethers.io/v5/)
+-   [Alchemy](https://www.alchemy.com/)
+-   [SweetAlert2](https://sweetalert2.github.io/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- BUILT WITH -->
 
-## Learn More
+<!-- COLOUR PALETTE -->
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<a name="colour-palette"></a>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Colour Palette 🎨
 
-### Code Splitting
+-   <b>#e8f9fd</b> (Foam)
+-   <b>#79dae8</b> (Sky Blue)
+-   <b>#0aa1dd</b> (Cerulean)
+-   <b>#2155cd</b> (Mariner)
+-   <b>#000000</b> (Black)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- COLOUR PALETTE -->
 
-### Analyzing the Bundle Size
+<!-- FONT USED -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<a name="font-used"></a>
 
-### Making a Progressive Web App
+### Font Used ✒️
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+-   [Lato](https://fonts.google.com/specimen/Lato)
 
-### Advanced Configuration
+<!-- FONT USED -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!-- GETTING STARTED -->
 
-### Deployment
+<a name="getting-started"></a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Getting Started 🚀
 
-### `npm run build` fails to minify
+All you need to get started with this project is **MATIC!** 😄
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<a name="installation"></a>
+
+### Installation 💻
+
+1.  **Clone** this repo.
+    ```sh
+    git clone https://github.com/githubotoro/laxmi-crypt-fund-web3-app.git
+    ```
+2.  **(Optional)** Modify **CONTRACT_ADDRESS** in **App.js** under **/src/App.js** and update **LaxmiCryptFund.json** under **/src/Utils** according to your smart contract or you can use mine as well.
+
+    ```js
+    const CONTRACT_ADDRESS = "YOUR_SMART_CONTRACT_ADDRESS";
+    ```
+
+    > **NOTE: If you want to make changes to smart contract, refer this **[laxmi-crypt-fund-smart-contract](https://github.com/githubotoro/laxmi-crypt-fund-smart-contract)** project and don't forget to update CONTRACT_ADDRESS and LaxmiCryptFund.json in your web3 app after deployment.**
+
+3.  Get your "Server Url" and "Application ID" from **[Moralis](https://moralis.io/)**. Add them in a **.env** file.
+
+    ```sh
+    npm install
+    ```
+
+    ```sh
+    REACT_APP_SERVER_URL = "YOUR_MORALIS_SERVER_URL"
+    REACT_APP_APP_ID = "YOUR_MORALIS_APPLICATION_ID"
+    ```
+
+4.  **Install** NPM packages.
+    ```sh
+    npm install
+    ```
+5.  **Start** the project.
+
+    ```sh
+    npm start
+    ```
+
+6.  **Time to invest and double that MATIC! 😁**
+
+<!-- GETTING STARTED -->
+
+<!-- CONTRIBUTING -->
+
+<a name="contributing"></a>
+
+## Contributing 🤝
+
+"Laxmi Crypt Fund" is a community project and any contributions you make are greatly appreciated. If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "chai". 🏷
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/LaxmiFeature`)
+3. Commit your Changes (`git commit -m 'Add some LaxmiFeature'`)
+4. Push to the Branch (`git push origin feature/LaxmiFeature`)
+5. Open a Pull Request
+
+<!-- CONTRIBUTING -->
+
+<!-- LICENSE -->
+
+<a name="license"></a>
+
+## License 📃
+
+Distributed under the **MIT License**. See `LICENSE` for more information.
+
+<!-- LICENSE -->
+
+<!-- CONTACT -->
+
+<a name="contact"></a>
+
+## Contact ☎️
+
+> **Uday Khokhariya**
+
+-   **Twitter** - [yupuday](https://twitter.com/yupuday)
+-   **Email** - uday.khokhariya@gmail.com
+
+<!-- CONTACT -->
+
+<!-- PROJECT LINKS -->
+
+<a name="project-links"></a>
+
+## Project Links 🔗
+
+> **Product Hunt Link** : [https://www.producthunt.com/@yupuday](https://www.producthunt.com/@yupuday)
+
+> **GitHub Web3 App Project Link** : [https://github.com/githubotoro/laxmi-crypt-fund-web3-app](https://github.com/githubotoro/laxmi-crypt-fund-web3-app)
+
+> **GitHub Smart Contract Project Link** : [https://github.com/githubotoro/laxmi-crypt-fund-smart-contract](https://github.com/githubotoro/laxmi-crypt-fund-smart-contract)
+
+> **Deployed Project Link** : [https://laxmi-crypt-fund.vercel.app](https://laxmi-crypt-fund.vercel.app)
+
+> **Deployed Smart Contract Link** : [https://mumbai.polygonscan.com/address/0x085d174c046DfdeAE987D27fF5446D31A570D6AA#code](https://mumbai.polygonscan.com/address/0x085d174c046DfdeAE987D27fF5446D31A570D6AA#code)
+
+> **Deployed Smart Contract Address** : [0x085d174c046DfdeAE987D27fF5446D31A570D6AA](https://mumbai.polygonscan.com/address/0x085d174c046DfdeAE987D27fF5446D31A570D6AA)
+
+<!-- PROJECT LINKS -->
+
+<!-- ACKNOWLEDGMENTS -->
+
+<a name="acknowledgements"></a>
+
+## Acknowledgments 🙌
+
+-   [Phir Hera Pheri (2006)](https://www.youtube.com/watch?v=TmxYlA26Jr4)
+-   [Moralis](https://moralis.io/)
+-   [Choose an Open Source License](https://choosealicense.com)
+-   [Get Emoji](https://getemoji.com/)
+-   [Name that Color](https://chir.ag/projects/name-that-color/#D3D3D3)
+
+<!-- ACKNOWLEDGMENTS -->
+
+<div align="center">
+  <a href="https://laxmi-crypt-fund.vercel.app">
+    <img src="Images/laxmi-crypt-fund-illustration.png" alt="logo" width="100%">
+    <h1><b>Zor-Zor se bolke Scheme bata dooo... 💯</b></h1>
+  </a>
+</div>
