@@ -1,6 +1,8 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 
+import console from "console-browserify";
+
 // Moralis
 import {
 	useMoralis,
