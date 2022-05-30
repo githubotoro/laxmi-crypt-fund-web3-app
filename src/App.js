@@ -708,7 +708,7 @@ function App() {
 							</span>
 							<hr />
 							This project is inspired from Neeraj Vora's
-							directoral "Phir Hera Pheri" (2006). It's a Web3
+							directorial "Phir Hera Pheri" (2006). It's a Web3
 							parody of "Laxmi Chit Fund" on Polygon Mumbai
 							Testnet. Whenever an investment is made, there is
 							50% chance of getting it doubled, and 50% chance of
