@@ -139,16 +139,13 @@ All you need to get started with this project is **MATIC!** 😄
 
     > **NOTE: If you want to make changes to smart contract, refer this **[laxmi-crypt-fund-smart-contract](https://github.com/githubotoro/laxmi-crypt-fund-smart-contract)** project and don't forget to update CONTRACT_ADDRESS and LaxmiCryptFund.json in your web3 app after deployment.**
 
-3.  Get your "Server Url" and "Application ID" from **[Moralis](https://moralis.io/)**. Add them in a **.env** file.
+3.  Get your own **Alchemy API Key** on **"Polygon Mumbai Testnet"** from **[Alchemy](https://www.alchemy.com/).** Make a **.env** file in the root directory and enter the following line.
 
     ```sh
-    npm install
+    REACT_APP_ALCHEMY_KEY = "YOUR_ALCHEMY_API_KEY"
     ```
 
-    ```sh
-    REACT_APP_SERVER_URL = "YOUR_MORALIS_SERVER_URL"
-    REACT_APP_APP_ID = "YOUR_MORALIS_APPLICATION_ID"
-    ```
+    > **NOTE: Never push your .env file to GitHub.**
 
 4.  **Install** NPM packages.
     ```sh
@@ -230,6 +227,7 @@ Distributed under the **MIT License**. See `LICENSE` for more information.
 ## Acknowledgments 🙌
 
 -   [Phir Hera Pheri (2006)](https://www.youtube.com/watch?v=TmxYlA26Jr4)
+-   [Alchemy](https://www.alchemy.com/)
 -   [Moralis](https://moralis.io/)
 -   [Choose an Open Source License](https://choosealicense.com)
 -   [Get Emoji](https://getemoji.com/)

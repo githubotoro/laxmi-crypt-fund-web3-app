@@ -97,74 +97,109 @@ function App() {
 		}
 	);
 
-	// Function to fetch contract data
-	const fetchContractData = async () => {
-		try {
-			try {
-				const data = await fetch();
-			} catch (error) {
-				console.log(error);
-			}
+	// // Function to fetch contract data
+	// const fetchContractData = async () => {
+	// 	try {
+	// 		const data = await fetch();
 
-			setInvestors(data[0]);
-			setMinInvestment(data[1]);
-			setMaxInvestment(data[2]);
-			setWon(data[3]);
-			setLost(data[4]);
+	// 		setInvestors(data[0]);
+	// 		setMinInvestment(data[1]);
+	// 		setMaxInvestment(data[2]);
+	// 		setWon(data[3]);
+	// 		setLost(data[4]);
+
+	// 		setMemos([]);
+
+	// 		for (let i = data[5].length - 1; i >= data[5].length - 5; i--) {
+	// 			setMemos((prevState) => [
+	// 				...prevState,
+	// 				{
+	// 					investor: data[5][i][0],
+	// 					luckyNumber: data[5][i][1],
+	// 					result: data[5][i][2],
+	// 					investment: data[5][i][3],
+	// 					timestamp: new Date(data[5][i][4] * 1000),
+	// 				},
+	// 			]);
+	// 		}
+	// 	} catch (error) {
+	// 		console.log(error);
+	// 	}
+	// };
+
+	const fetchData = async () => {
+		let ALCHEMY_PROVIDER = new ethers.providers.JsonRpcProvider(
+			process.env.REACT_APP_ALCHEMY_KEY
+		);
+
+		let lcfContract = new ethers.Contract(
+			CONTRACT_ADDRESS,
+			CONTRACT_ABI,
+			ALCHEMY_PROVIDER
+		);
+
+		let getAllPromise = lcfContract.getAll();
+
+		getAllPromise.then(function (result) {
+			setInvestors(result[0].toString());
+			setMinInvestment(result[1].toString());
+			setMaxInvestment(result[2].toString());
+			setWon(result[3].toString());
+			setLost(result[4].toString());
 
 			setMemos([]);
 
-			for (let i = data[5].length - 1; i >= data[5].length - 5; i--) {
+			for (let i = result[5].length - 1; i >= result[5].length - 5; i--) {
 				setMemos((prevState) => [
 					...prevState,
 					{
-						investor: data[5][i][0],
-						luckyNumber: data[5][i][1],
-						result: data[5][i][2],
-						investment: data[5][i][3],
-						timestamp: new Date(data[5][i][4] * 1000),
+						investor: result[5][i][0].toString(),
+						luckyNumber: result[5][i][1].toString(),
+						result: result[5][i][2].toString(),
+						investment: result[5][i][3].toString(),
+						timestamp: new Date(result[5][i][4].toString() * 1000),
 					},
 				]);
 			}
-		} catch (error) {
-			console.log(error);
-		}
+
+			setLoading(false);
+		});
 	};
 
 	// Setting all initial parameters
 	useEffect(() => {
-		const fetchData = async () => {
-			try {
-				const data = await fetch();
+		// const fetchData = async () => {
+		// 	try {
+		// 		const data = await fetch();
 
-				setInvestors(data[0]);
-				setMinInvestment(data[1]);
-				setMaxInvestment(data[2]);
-				setWon(data[3]);
-				setLost(data[4]);
+		// 		setInvestors(data[0]);
+		// 		setMinInvestment(data[1]);
+		// 		setMaxInvestment(data[2]);
+		// 		setWon(data[3]);
+		// 		setLost(data[4]);
 
-				setMemos([]);
+		// 		setMemos([]);
 
-				for (let i = data[5].length - 1; i >= data[5].length - 5; i--) {
-					setMemos((prevState) => [
-						...prevState,
-						{
-							investor: data[5][i][0],
-							luckyNumber: data[5][i][1],
-							result: data[5][i][2],
-							investment: data[5][i][3],
-							timestamp: new Date(data[5][i][4] * 1000),
-						},
-					]);
-				}
+		// 		for (let i = data[5].length - 1; i >= data[5].length - 5; i--) {
+		// 			setMemos((prevState) => [
+		// 				...prevState,
+		// 				{
+		// 					investor: data[5][i][0],
+		// 					luckyNumber: data[5][i][1],
+		// 					result: data[5][i][2],
+		// 					investment: data[5][i][3],
+		// 					timestamp: new Date(data[5][i][4] * 1000),
+		// 				},
+		// 			]);
+		// 		}
 
-				fetchContractData();
+		// 		fetchContractData();
 
-				setLoading(false);
-			} catch (error) {
-				console.log(error);
-			}
-		};
+		// 		setLoading(false);
+		// 	} catch (error) {
+		// 		console.log(error);
+		// 	}
+		// };
 
 		fetchData();
 	}, []);
@@ -287,7 +322,7 @@ function App() {
 
 							setInvestment("");
 
-							fetchContractData();
+							fetchData();
 
 							console.log("Transaction Hash: ", investTxn.hash);
 
