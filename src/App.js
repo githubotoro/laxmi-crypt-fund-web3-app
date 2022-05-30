@@ -56,7 +56,7 @@ function App() {
 	const CONTRACT_ABI = abi.abi;
 
 	// Setting Page Loading State
-	const [loading, setLoading] = useState(false);
+	const [loading, setLoading] = useState(true);
 
 	// Enter the site
 	const [canEnter, setCanEnter] = useState(false);
@@ -154,7 +154,7 @@ function App() {
 					]);
 				}
 
-				console.log(`${memos[0]}`);
+				fetchContractData();
 
 				setLoading(false);
 			} catch (error) {
